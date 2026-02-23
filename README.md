@@ -11,7 +11,9 @@ To design and simulate a Non-Inverting Amplifier using μA741 in Proteus Design 
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
-(Draw neatly in record OR paste Proteus circuit screenshot)
+
+<img width="940" height="545" alt="image" src="https://github.com/user-attachments/assets/46516e31-c1d6-4674-8c55-0c00c315aeff" />
+
 Pin Configuration:
 •	Pin 3 → Input (Non-inverting)
 •	Pin 2 → Feedback network
@@ -31,8 +33,20 @@ The output signal is amplified and remains in phase with the input signal.
 7.	Run simulation.
 8.	Observe input and output waveforms.
 ## Waveform
+<img width="940" height="597" alt="image" src="https://github.com/user-attachments/assets/6c11997a-f2a1-44af-839a-1fde6770cf11" />
+
 ## Tabulation
-S.No	Vin (V)	Theoretical Gain	Theoretical Vout (V)	Practical Vout (V)
+
+| Sl. No | Input Voltage (Vin) | Output Voltage (Vout = 11Vin) |
+| ------ | ------------------- | ----------------------------- |
+| 1      | +0.1 V              | +1.1 V                        |
+| 2      | +0.2 V              | +2.2 V                        |
+| 3      | +0.5 V              | +5.5 V                        |
+| 4      | 0 V                 | 0 V                           |
+| 5      | –0.1 V              | –1.1 V                        |
+| 6      | –0.2 V              | –2.2 V                        |
+| 7      | –0.5 V              | –5.5 V                        |
+
 ## Result
 The Non-Inverting Amplifier using μA741 Op-Amp was designed and simulated successfully.
 The voltage gain obtained is approximately 11.
@@ -47,4 +61,23 @@ The output waveform is in phase with the input waveform.
 3.	Why is output in phase?
 4.	What happens if Rf increases?
 5.	What is the input impedance of non-inverting amplifier?
+
+ANSWER:
+
+1. **Non-Inverting Amplifier:**
+  An op-amp circuit where the input signal is applied to the positive (+) terminal. The output voltage is amplified without changing the signal polarity.
+
+2. **Gain Formula:**
+    Voltage gain,It depends on the feedback resistor ( R_f ) and input resistor ( R_1 ).
+
+3. **Why output is in phase:**
+    The input is given to the non-inverting (+) terminal, so the op-amp amplifies without phase reversal. Hence output and input have 0° phase difference.
+
+4. **If ( R_f ) increases:**
+   The voltage gain increases because gain is directly proportional to ( R_f ). So output amplitude becomes larger.
+
+5. **Input impedance:**
+    Very high (ideally infinite) because the input is connected to the op-amp’s non-inverting terminal. This draws almost no current from the source.
+
+
 
